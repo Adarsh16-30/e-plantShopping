@@ -160,17 +160,29 @@ body {
     width: 650px;
     font-size: 19px;
 }
-.cart{
-    color: white;
-    display: flex;
+.cart {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
 }
-.cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
-    position: absolute;
-    font-size: 29px;
 
+.cart_quantity_count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  user-select: none;
+  z-index: 2;
 }
 .plantname_heading{
    display: flex;
